@@ -29,7 +29,12 @@ function App() {
                     products={products}
                 />
             }
-
+            {
+                products.length === 0 &&
+                <div className='mt-2 centered max-300 flex-column'>
+                    <p>Cargando componentes...</p>
+                </div>
+            }
         </div>
     );
 }
